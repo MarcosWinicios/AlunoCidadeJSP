@@ -2,7 +2,7 @@ package br.com.marcoswinicios.atividadealuno.model;
 
 public class Cidade {
 	private String nome;
-	private int idade;
+	private String estado;
 	
 	public String getNome() {
 		return nome;
@@ -10,11 +10,11 @@ public class Cidade {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public int getIdade() {
-		return idade;
+	public String getEstado() {
+		return estado;
 	}
-	public void setIdade(int idade) {
-		this.idade = idade;
+	public void setEstado(String estado) {
+		this.estado = estado;
 	}
 	
 }
