@@ -1,0 +1,18 @@
+CREATE DATABASE progWeb1;
+USE progWeb1;
+
+CREATE TABLE cidade (
+	id INT NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(80) NOT NULL,
+    estado VARCHAR(2) NOT NULL,
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE aluno (
+	id INT NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(80) NOT NULL,
+    idade INT NOT NULL,
+-- 	idCidade INT NOT NULL,
+-- 	FOREIGN KEY(idCidade) REFERENCES cidade (id),
+    PRIMARY KEY(id)
+);
