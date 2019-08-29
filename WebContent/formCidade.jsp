@@ -12,7 +12,8 @@
 			<input type="text" id="nome">
 			<br><br>
 			<label for="Estado" id="estado">Estado:</label>
-			<input type="text" id="estado">
+			<input type="text" id="estado"> <br><br>
+			<input type="submit" value="gravar">
 		</form>
 	</body>
 </html>
