@@ -7,6 +7,7 @@
 		<title>Insert title here</title>
 	</head>
 	<body>
+	<h1>Cadastro de Cidade</h1>
 		<form action="">
 			<label for = "nome">Nome:</label>
 			<input type="text" id="nome">
