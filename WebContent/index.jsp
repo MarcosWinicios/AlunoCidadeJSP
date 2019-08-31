@@ -13,7 +13,7 @@
 		
 		<ul>
 		  <li> <a href = "formCidade.jsp">Cadastrar Cidade</a> </li>
-		  <li> <a href  = "#">Cadastrar Aluno</a> </li>
+		  <li> <a href  = "formAluno.jsp">Cadastrar Aluno</a> </li>
 		</ul>
 
 		
