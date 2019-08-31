@@ -8,12 +8,12 @@
 	</head>
 	<body>
 	<h1>Cadastro de Cidade</h1>
-		<form action="">
+		<form action="adicionaCidade.jsp">
 			<label for = "nome">Nome:</label>
-			<input type="text" id="nome">
+			<input type="text" name="nome">
 			<br><br>
 			<label for="Estado" id="estado">Estado:</label>
-			<input type="text" id="estado"> <br><br>
+			<input type="text" name="estado"> <br><br>
 			<input type="submit" value="gravar">
 		</form>
 	</body>
