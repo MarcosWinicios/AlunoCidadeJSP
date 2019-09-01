@@ -1,3 +1,7 @@
+<%@page import="br.com.marcoswinicios.atividadealuno.dao.CidadeDAO"%>
+<%@page import="java.util.List"%>
+<%@page import="br.com.marcoswinicios.atividadealuno.model.Cidade"%>
+<%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -16,7 +20,21 @@
 		<label for= "idade" id="idade">Idade:</label>
 		<input type = "text" name="idade">
 		<br><br>
+		<label>Cidade</label>
+		<br>
+		<p>Olá
+		<select name="idCidade">
+		
+		<%
+			List<Cidade> cidades = new CidadeDAO().listar();
+			for(Cidade cidade : cidades){
+				out.println("<option value = '" + cidade.getId() + "'>" + cidade.getNome() + " - " + cidade.getEstado() + "</option>");
+			}
+			
+		%>
+		</select><br><br>
 		<input type = "submit" value="gravar">
+		
 	</form>
 </body>
 </html>

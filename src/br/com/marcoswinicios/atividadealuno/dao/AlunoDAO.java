@@ -15,11 +15,12 @@ public class AlunoDAO {
 	}
 	
 	public void inserirAluno(Aluno a) {
-		String sql = "INSERT INTO aluno(nome, idade) values (?, ?)";
+		String sql = "INSERT INTO aluno(nome, idade, idCidade) values (?, ?, ?)";
 		 try {
 			 stmt = conexao.prepareStatement(sql);
 			 stmt.setString(1, a.getNome());
 			 stmt.setInt(2, a.getIdade());
+			 stmt.setInt(3, a.getCidade().getId());
 			 stmt.execute();
 			 stmt.close();
 		 }catch(Exception e) {
